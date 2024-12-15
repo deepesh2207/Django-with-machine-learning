@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .hello-container {
+            text-align: center;
+            background: #ffffff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        label {
+            text-align: left;
+            font-weight: bold;
+        }
+        input {
+            padding: 8px;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        a {
+            margin-top: 10px;
+            display: inline-block;
+            text-decoration: none;
+            color: #007bff;
+            transition: color 0.3s;
+        }
+        a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="hello-container">
+        <h1>Contact Page</h1>
+        <form>
+            <label for="temperature">Temperature:</label>
+            <input type="number" id="temperature" name="temperature" step="0.1" value="0.0">
+
+            <label for="humidity">Humidity:</label>
+            <input type="number" id="humidity" name="humidity" step="0.1">
+
+            <label for="pmTwoPointFive">PM 2.5:</label>
+            <input type="number" id="pmTwoPointFive" name="pmTwoPointFive" step="0.1">
+
+            <label for="pmTen">PM 10:</label>
+            <input type="number" id="pmTen" name="pmTen" step="0.1">
+
+            <label for="nitrogendioxide">Nitrogen Dioxide:</label>
+            <input type="number" id="nitrogendioxide" name="nitrogendioxide" step="0.1">
+
+            <label for="sulphurdioxide">Sulphur Dioxide:</label>
+            <input type="number" id="sulphurdioxide" name="sulphurdioxide" step="0.1">
+
+            <label for="carbonmonoxide">Carbon Monoxide:</label>
+            <input type="number" id="carbonmonoxide" name="carbonmonoxide" step="0.1">
+
+            <label for="industrial">Proximity to Industrial Areas:</label>
+            <input type="number" id="industrial" name="Proximity_to_Industrial_Areas" step="0.1">
+
+            <label for="population">Population Density:</label>
+            <input type="number" id="population" name="Population_Density">
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
